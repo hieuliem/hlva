@@ -1,0 +1,34 @@
+﻿<div class="login">
+<form id="loginForm" role="form" method="post" action="" autocomplete="off">
+	<h2>Admin Login</h2>
+	<?php
+	//check for any errors
+	if(isset($error)){
+		foreach($error as $error){
+			echo '<p class="bg-danger">'.$error.'</p>';
+		}
+	}
+
+	if(isset($_GET['action'])){
+
+		//check the action
+		switch ($_GET['action']) {
+			case 'active':
+				echo "<h2 class='bg-success'>Your account is now active you may now log in.</h2>";
+				break;
+			case 'reset':
+				echo "<h2 class='bg-success'>Please check your inbox for a reset link.</h2>";
+				break;
+			case 'resetAccount':
+				echo "<h2 class='bg-success'>Password changed, you may now login.</h2>";
+				break;
+		}
+
+	}				
+	?>
+	<input type="text" name="username" id="username" class="form-control input-lg" placeholder="User Name" value="">
+	<input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" value="">
+	<input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg">
+	<a href='/ellbee/admin/auth/reset.php'>Forgot your Password?</a>
+</form>
+</div>

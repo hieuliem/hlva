@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content{
+
+}
+
+#pusherRight{
+	float:right;
+	width:208px;
+	margin: 2px 5px 7px 0;
+}
+
+#pusherRight_content{
+	width:200px;
+	line-height:normal;
+}
+#pusherRight_body{
+	width:200px;
+	padding:0 3px 0 3px;
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+	background:#FFF;
+}
+#pusherRight_body h3{
+	font-size:1.2em;
+	color:#005C97;
+}
+#pusherRight_body p{
+	color:#333333;
+}
+#pusherRight_body a{
+	color:#4489DD;
+}
+#pusherRight_body a:hover{
+	color:#005C97;
+}
+#pusher_right_top{
+	width:208px;
+	height:4px;
+	padding:0px;
+	margin:0;
+	line-height:0px;
+	background:url('../images/pusher_right_top.gif');
+}
+#pusher_right_bottom{
+	width:208px;
+	height:4px;
+	padding:0px;
+	margin:0;
+	margin-top: -2px;
+	line-height:0px;
+	background:url('../images/pusher_right_bottom.gif');
+}
+
+
+.Box, .BoxOn {
+width: 230px;
+min-height:270px;
+background-repeat: no-repeat;
+float:left;
+cursor:pointer;
+margin-left:4px;
+margin-right:3px;
+margin-top:5px;
+}
+
+.Box {
+background-image: url(../images/home/Box.jpg);	
+//background-image: url(../images/vongchay/Box.jpg);
+}
+
+.BoxOn {
+background-image: url(../images/home/BoxOn.jpg);
+//background-image: url(../images/vongchay/BoxOn.jpg);
+}
+.Box .Content, .BoxOn .Content {
+padding: 15px;
+}
+.Box .Content .Text .More, .BoxOn .Content .Text .More {
+font-weight: bold;
+color: #990000;
+display: block;
+margin-top: 5px;
+font-size:11px;
+visibility:hidden;
+}
+.BoxOn .Content .Text .More {
+visibility:visible;
+}
+.Box .Content .Text p, .BoxOn .Content .Text p {
+font-size: 11px;
+margin-top: 10px;
+margin-bottom: 10px;
+color:#333333;
+}
+.Box .Content h3, .BoxOn .Content h3 {
+margin: 0px;
+padding: 0px;
+text-shadow: 1px 1px rgb(0, 0, 0);
+/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#000, Direction=-35);*/
+filter:progid:DXImageTransform.Microsoft.DropShadow(OffX=1, OffY=1, Color='black');
+}
+
+
+
+
+.Box .Content h3 a:link, .BoxOn .Content h3 a:link, .Box .Content h3 a:visited, .BoxOn .Content h3 a:visited {
+margin: 0px;
+padding: 0px;
+color:#fff;
+text-decoration:none;
+font-size: 14px;
+letter-spacing:-0.05em;
+padding-bottom:5px;
+margin-bottom:5px;
+display:block;
+}
+.Box .Content .Image img, .BoxOn .Content .Image img  {
+background-color: #fff;
+padding: 1px;
+border: 1px solid #999;
+}

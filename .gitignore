@@ -1,0 +1,24 @@
+# Logs & temporary files
+error_log
+**/error_log
+*.log
+lich/data/.json
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Externalized / heavy media & legacy cache folders
+taphat/baihatmoi/
+taphat/thanhvinh/
+images/[0-9a-f]/
+cgi-bin/
+upload/*.mp3
+upload/*.wav
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

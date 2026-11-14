@@ -1,0 +1,52 @@
+#newcomment_container{
+	//border: #d3d6db 1px solid;
+}
+
+.level1{ /* textarea */
+	width: 94%; height: auto;
+	padding: 5px; margin-bottom: 8px;
+	border: #d3d7dc 1px solid;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+	background-color: #f9f9f9;
+	background:rgba(255,255,255,0.5);
+	color: #333;
+	resize: none;
+	float: right;
+}
+
+.level0{ /* textarea */
+	width: 100%; height: auto;
+	padding: 5px; margin-bottom: 8px;
+	border: #d3d7dc 1px solid;
+	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+	background-color: #f9f9f9;
+	background:rgba(255,255,255,0.5);
+	color: #333;
+	resize: none;
+}
+
+.thecom .com-dt{
+	float: right;
+	margin-right: 4px;
+}
+
+.thecom .poster{
+	display: inline;
+	float: left;
+	font-family: tahoma;
+	font-size: 13px;
+	color: #3b5998;
+	margin: 0 15px 0 0;
+}
+.thecom .subject{
+	display: inline;
+	font-weight: bold;
+}
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+    .thecom h5{
+		display: inline;
+		float: left;
+        word-wrap: break-word;
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"path":"baihatmoi",
+	"sub":"xmas",
+	"list":[
+		{"date":"12\/25\/2013","dir":"congboTinMungGS","name":"Công Bố Tin Mừng Giáng Sinh","pdf":"congboTMGS","tacgia":"&nbsp;","caudau":"Hôm nay, ngày hai mươi lăm tháng mười hai, .."},
+		{"date":"12\/01\/2012","dir":"emmanuel","name":"Emmanuel","pdf":"emmanuel","tacgia":"Nguyễn Duy","caudau":"Emmanuell Thiên Chúa ở cùng chúng ta."},
+		{"date":"12\/01\/2012","dir":"demBelem","name":"Đêm Belem","pdf":"demBelem","tacgia":"Hải Nguyễn","caudau":"Đồng Bêlem tuyết sương lạnh lùng."},
+		{"date":"12\/01\/2012","dir":"demBinhAn","name":"Đêm Bình An","pdf":"demBinhAn","tacgia":"Ngô Duy Linh","caudau":"Vinh danh Chúa Ba Ngôi trên các tầng trời."},
+		{"date":"12\/24\/2023","dir":"demHongAn_PMM","name":"Đêm Hồng Ân","pdf":"demHongAn","tacgia":"Phùng Minh Mẫn","caudau":"Đêm nay trên cao ngàn sao lấp lánh .."},
+		{"date":"12\/01\/2012","dir":"demThanhBinh","name":"Đêm Thanh Bình","pdf":"demThanhBinh","tacgia":"Hoàng Kim","caudau":"Đêm thanh bình, đêm an lành."},
+		{"date":"12\/25\/2013","dir":"hayDenBelem","name":"Hãy Đến Bêlem","pdf":"hayDenBelem","tacgia":"Đỗ Vy Hạ","caudau":"Hãy đến Bêlem hỡi loài người .."},
+		{"date":"12\/01\/2012","dir":"leVatDemNay","name":"Lễ Vật Đêm Nay","pdf":"leVatDemNay","tacgia":"Kim Long","caudau":"Trong đêm thánh này nào biết dâng gì."},
+		{"date":"12\/25\/2013","dir":"leVatGS","name":"Lễ Vật Giáng Sinh","pdf":"leVatGS","tacgia":"Giang Ân","caudau":"Lễ vật giáng sinh năm nay, con dâng lên Chúa .."},
+		{"date":"12\/25\/2022","dir":"demTronTinhThuong","name":"Đêm Tròn Tình Thương","pdf":"demTronTinhThuong","tacgia":"Lữ Hành","caudau":"Sông thu đã phai màu úa vàng cỏ cây .."}
+	]
+}

@@ -1,0 +1,18 @@
+﻿<div class="new-com-cnt Form"><span id="f1-error" class="label label-danger"></span>
+	<form name="f1" id="f1" onSubmit="return validateForm()" >
+		<input type="text" id="name" name="name" value="" placeholder="Your name" required />
+		<input type="text" id="email" name="email" value="" placeholder="Your e-mail adress" required />
+		<input type="text" name="subject" id="subject" size="48" value="" placeholder="What your comment's about" required />
+		<textarea name="comment" id="comment" class="the-new-com" placeholder="Your comments" required ></textarea>
+		
+		<input type="hidden" name="idreplyto" id="idreplyto" value="0" />
+		<input type="hidden" name="pageid"  id="pageid"  value="<?php echo $UniquePageId; ?>">
+		<div class="bt-add-com" target_path="cmt/">Post comment</div>
+		<div class="bt-cancel-com">Cancel</div>
+		
+
+		<!--input id="bt-add-com" type="submit" name="submit" value="Post comment" class="btn btn-primary btn-sm" tabindex="5">
+		<input id="bt-cancel-com" name="" type="reset" value="Cancel" class="btn btn-default btn-sm" tabindex="7" /-->
+	</form>
+</div>
+<div class="clear"></div>

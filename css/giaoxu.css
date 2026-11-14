@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	/* Mozilla: */
+    /*background: -moz-linear-gradient(top, #000000, #FFFFFF);*/
+    /* Chrome, Safari:*/
+    /*background: -webkit-gradient(linear,
+                left top, left bottom, from(#000000), to(#FFFFFF));*/
+    /* MSIE */
+    /*filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#000000', EndColorStr='#FFFFFF', GradientType=0);*/
+	background:#747474 url(../images/bg_gradient.png) repeat-y scroll center;
+}
+
+/* set border silver to green */
+div.bordersilver {
+    border: 1px solid #00CC00;
+}
+
+div.news_column div.header {
+    background-color:green;
+	margin: 2px;
+    padding: 4px 0 0 4px;
+	color: #fff;
+    border-bottom: 1px solid #ccc;
+	font-family:"Verdana",Georgia,Serif;
+	font-weight:bolder;
+	text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+/* end */
+.news_grid .item_content h2{
+	text-align: center;
+}
+
+.span-19 {
+	width: 680px;
+}
+
+.span-5 {
+	width: 189px;
+}
+
+.fl{
+     margin-left:2px;
+}
+
+.last {
+    margin-right: 0 !important;
+}
+
+/* SHADOW EFFECT */
+.F4F3EE-background{
+	background: none repeat scroll 0 0 #F4F3EE;
+}
+
+.shadow-bringer {
+	border:thin solid 1px;
+    margin: 20px auto;
+    padding: 5px;
+    width: 500px;
+}
+
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 4px 4px 5px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+
+.hl_scrollUp img {  
+    padding: 5px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;  
+    width:  730px; 
+    height: 548px; 
+    top:  0; 
+    left: 0 
+} 
+
+.hl_fade img {  
+    padding: 5px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;  
+    width:  680px; 
+    height: 452px; 
+    top:  0; 
+    left: 0 
+} 
+
+/* THUONG NIEN */
+#header {
+    background: #fff url(../images/header.gif) no-repeat;
+    height: 150px;
+    position: relative;
+}
+
+div.box h3.header {
+	/*border: 1px solid #0f69e2;*/
+    border-bottom: 2px solid #fff;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    text-indent: 10px;
+    background: #fff url(../images/h3.header.jpg) repeat-x;
+}
+
+div.box h3.header a {
+    color: #ffff66;
+}
+
+div.box h3.header strong {
+    padding-right: 4px;
+    color: #00ff00;
+}
+
+/* NAV */
+div.nav {
+    position: relative;
+    background: #0B41A5 url(../images/nav_bg.jpg) repeat-x;
+    height: 27px;
+    line-height: 27px;
+    z-index: 990;
+}
+
+ul.nav li {
+    float: left;
+    position: relative;
+}
+
+ul.nav li a {
+    display: block;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+	padding: 0 10px 0 0;
+    font-weight: 700;
+}
+
+ul.nav li.current a {
+    background: url(../images/nav_r.jpg) no-repeat top right;
+}
+
+ul.nav li a:hover, ul.nav li.hover a span, ul.nav li.hover a:hover {
+    background: url(../images/nav_hover_r.jpg) no-repeat top right;
+}
+
+ul.nav li.hover a span, ul.nav a:hover span, ul.nav li.current a:hover span {
+    background: url(../images/nav_hover_l.jpg) no-repeat;
+}
+
+ul.nav li.current a span {
+    background: url(../images/nav_l.jpg) no-repeat;
+    color: #fff;
+}
+
+div.nav div.rss a {
+    background: url(../images/rss_button.jpg) no-repeat top right;
+    height: 27px;
+    width: 66px;
+    display: block;
+}
+
+
+div.nav div.rss a:hover {
+    background: url(../images/rss_button_hover.jpg) no-repeat top right;
+}
+
+ul.nav span {
+    padding: 0 0 0 10px;
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul.nav li ul.subnav {
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	background: #0e2daa;
+	border: 1px solid #6b0000;
+	border-top: 0;
+}
+
+ul.nav ul.subnav li {
+	border: 1px solid #ff0103 /*subnav border*/;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+
+ul.nav ul.subnav li a {
+	background: #6b0000/*subnav background*/;
+	font-weight: normal;
+	border: 1px solid #cf0000;
+	border-top: 0;
+	border-bottom: 1px solid #cf0000;
+    color: #fff;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    width: 196px;
+    text-indent: 10px;
+    display: inline-block;
+}
+
+ul.nav ul.subnav li a:hover {
+    background: #fe0000;
+	font-weight:bold;
+}
+
+ul.nav strong {
+    color: #0F0;
+    padding: 0 4px 0 0;
+}
+
+ul.nav li.current strong {
+	color: #EE0000;
+}
+
+ul.nav li.current a:hover strong {
+	color: #FFF;
+}
+
+ul.nav li.home a, ul.nav li.home a:hover {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 27px;
+    background: url(../images/nav_home_r.jpg) no-repeat top right;
+    padding-right: 18px;
+}
+
+ul.nav li.home a:hover span {
+    color: #fff;
+}
+
+ul.nav li.home span, ul.nav li.home a:hover span {
+    background: url(../images/nav_home_l.jpg) no-repeat;
+    padding-left: 27px;
+}
+
+ul.nav ul ul {
+    left: 100%;
+    top: 0;
+}
+
+ul.nav li:hover > ul {
+    visibility: visible;
+}
+
+
+/* VERTICAL MENU */
+#ver_menu a {
+    background: #e4e4e4 url('../images/vertical_menu_bg.jpg') no-repeat left top;
+    color: #333;
+    display: block;
+    font: bold 11px / 24px tahoma, arial, sans-serif;
+    height: 25px;
+    text-decoration: none;
+}
+
+#ver_menu a.current {
+    background: #ffd9d9 url('../images/vertical_menu_bg.jpg') no-repeat left -25px;
+    color: #333;
+}
+
+#ver_menu a.sub_normal {
+    background: #f5fbfe url('../images/vertical_menu_bg.jpg') no-repeat left -75px;
+    color: #333;
+    padding-right: 5px;
+    text-align: right
+}
+
+#ver_menu a.sub_current {
+    background: #f5fbfe url('../images/vertical_menu_bg.jpg') no-repeat left -75px;
+    color: #cb0000;
+    padding-right: 5px;
+    text-align: right
+}
+
+#ver_menu a.current:hover {
+    background: #ffd9d9 url('../images/vertical_menu_bg.jpg') no-repeat left -25px;
+    color: #0943ae;
+}
+
+#ver_menu a:hover {
+    background: #d9e5ff url('../images/vertical_menu_bg.jpg') no-repeat left -50px;
+    color: #cb0000;
+}
+
+/* FOOTER */
+#footer {
+    border-top: 8px solid #003100;
+    background: url(../images/footer_bg.jpg) repeat-x;
+    padding: 5px 0;
+}
+
+/* BIBBLE READING */
+.content_bibleread {border: 1px solid #acacac;padding:10px 50px;display:block;overflow:auto;line-height: 1.6em;}
+/*==================== custom format to biblereading ================*/
+.ktcmn_title1{text-align: center;font-size:12pt;font-weight: bold;display:block;}
+.ktcmn_center_note{display:block;float:left;clear:both;color:red;padding-left:360px;}
+.ktcmn_title2{text-align: center;font-size:12pt;font-weight: bold;display:block;padding-top:24px;clear:both;}
+.ktcmn_centerred{display:block;color:red;text-align:center;clear:both;padding-top:6px;}
+.ktcmn_leftred{color:red;float:left;font-weight:bold;display:block;width:30%;text-align:left;clear:both;padding-top:12px;}
+.ktcmn_leftred1{color:red;float:left;font-weight:bold;display:block;width:30%;text-align:left;padding:12px 0 0 10px;clear:both;}
+.ktcmn_rightred{color:red;float:right;display:block;width:65%;text-align:right;padding-top:12px;}
+.ktcmn_italic{float:left;padding-top:6px;text-indent:30px;text-align: justify;font-style: italic;}
+.ktcmn_bold{padding:8px 0 0 15px;font-weight:bold;display:block;float:left;clear:both;}
+.ktcmn_p_poem{padding-top:6px;float:left;display:block;}
+.ktcmn_p_poem1{float:left;display:block;}
+.ktcmn_p_poem2{padding-left:55px;float:left;clear:both;}
+.ktcmn_p_normal{clear:both;float:left;padding-top:6px;text-indent:25px;text-align: justify;}
+.ktcmn_p_dapca1{font-size:9pt;font-weight:bold;float:left;display:block;padding:6px 0 0 8px;}
+.ktcmn_p_dapca2{font-size:9pt;font-weight:bold;clear:both;float:left;padding-left:37px;}
+.ktcmn_d_dapca{font-size:9pt;font-weight:bold;color:red;display:block;float:left;clear:both;padding:6px 0 0 15px;}
+.ktcmn_num_poem3{color:red;font-size:7pt;width:20px;text-align:right;display:block;margin:5px 5px 0 0;float:left;}
+.ktcmn_num_poem2{color:red;font-sizer7pt;width:20px;text-align:right;display:block;margin:0 5px 0 0;float:left;}
+.ktcmn_num_poem1{color:red;font-size:7pt;width:50px;text-align:right;display:block;margin:5px 5px 0 0;float:left;clear:both;}
+.ktcmn_num_poem{color:red;font-size:7pt;width:50px;text-align:right;display:block;margin:0 5px 0 0;float:left;clear:both;}
+.ktcmn_num_p{color:red;font-size:7pt;}
+.ktcmn_num_title{font-weight: bold;color:red;font-size: 9pt;}
+.ktcmn_num_title1{font-weight:bold;color:red;font-size: 9pt;clear:both;display:block;width:30px;text-align: right;float:left;}
+.ktcmn_num_title2{font-weight:bold;color:red;font-size:9pt;float:left;display:block;clear:both;width:30px;text-align:right;padding-top:6px;}
+.ktcmn_note{font-weight:bold;color:red;font-size:9pt;}
+
+
+/*==================== custom format to bibleservehour ================*/
+.ktcmn_title3{text-align: center;font-size:11pt;display:block;clear:both;font-weight:bold;padding-top:12px;}
+.ktcmn_leftred2{color:red;float:left;font-weight:bold;display:block;text-align:left;clear:both;padding-top:12px;}
+.ktcmn_leftred_note{color:red;float:left;display:block;text-align:left;padding:12px 0 0 5px;text-align:justify;}
+.ktcmn_CCXD{color:red;float:left;display:block;padding-left:55px;width:10px;text-align:left;clear:both;padding-top:6px;}
+.ktcmn_p_poemCCXD1{float:left;display:block;width:407px;text-align: justify;padding-left:12px;padding-top:6px;}
+.ktcmn_p_poemCCXD2{float:left;display:block;text-align:justify;padding-left:77px;clear:both;width:407px;}
+.ktcmn_p_poem_blank1{float:left;display:block;padding:6px 0 0 40px;clear:both;}
+.ktcmn_p_poem_blank2{float:left;display:block;clear:both;padding-left:40px;}
+.ktcmn_p_poem3{padding-top:6px;float:left;display:block;clear:both;padding-left:55px;}
+.ktcmn_centerred1{display:block;color:red;text-align:center;margin:0 auto;clear:both;font-weight:bold;}
+.ktcmn_dc{font-size:10pt;float:left;display:block;padding:6px 0 0 55px;color:red;clear:both;text-align:left;}
+.ktcmn_p_poem_dc1{float:left;display:block; padding: 6px 0 0 5px;}
+.ktcmn_p_poem_dc2{float:left;clear:both;padding-left:78px;}
+.ktcmn_CSCD{color:red;float:left;display:block;text-align:left;clear:both;padding:6px 10px 0 20px;}
+.ktcmn_p_poem_CS{padding:6px 0 0 25px; float:left;display:block;}
+.ktcmn_p_poem_CD{padding:6px 0 0 0;float:left;display:block;}
+.ktcmn_p_poem_CSCD{float:left;display:block;clear:both;padding-left:99px;}
+.ktcmn_italic_note{text-align:left;padding:6px 0 0 0;font-style:normal;}
+.ktcmn_title4{float:left;font-weight: bold;display:block;color:red;text-indent: 20px;clear:both;padding-top:9px;}
+.ktcmn_title4_note{color:red;float:left;display:block;text-align:left;padding:9px 0 0 5px;}
+.ktcmn_center_italic{font-style:italic;text-align:center;padding-top:6px;display:block;clear:both}
+.ktcmn_wildcard{color:red;display:block;width:430px;float:left;font-weight: bold;padding-right:10px;text-align:right;}
+.ktcmn_wildcard_note{display:block;float:left;}
+.ktcmn_centerred2{display:block;color:red;text-align:center;clear:both;}
+.ktcmn_rednote{color:red;text-align:justify;float:left;padding-top:9px;display:block;clear:both;}
+.ktcmn_num_title3{font-weight:bold;color:red;font-size:9pt;float:left;display:block;clear:both;width:35px;text-align:right;padding:6px 5px 0 0;}

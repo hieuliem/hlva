@@ -1,0 +1,130 @@
+<style>
+	body { font: 0.8em Arial, sans-serif; }
+	.thTab {padding: 0; clear: both;}
+	.thTab li { display: inline; }
+	.thTab li a { background: #CCC; padding: 10px; border-right: 1px solid #ccf; border-bottom: none; text-decoration: none; color: #eef; font-weight: bold;}
+	.thTab li a:hover {color:yellow;background: #606;}
+	.thTab li.active a { background:#eef; cursor:crosshair; color:#F00}
+	
+	.content {clear: both; border: none; padding-top: 5px; width: 800px;}
+	
+	.d{color: silver;}
+	.r{color: red;}
+	.o{color: orange;}
+	.b{color: blue;}
+	.link{color:blue; cursor:pointer}
+	
+	.topdownGradient{
+		background: #4C95AF;
+		background:
+			-moz-linear-gradient(
+				center bottom,
+				rgba(76,149,175,0.1) 5%,
+				rgba(183,185,52,0.9) 95%
+			);
+		background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.05, rgba(76,149,175,0.1)),
+			color-stop(0.95, rgba(183,185,52,0.9))
+		);
+	}
+	
+	.leftGradient{
+		background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.75) 13%, rgba(255,255,255,0.42) 52%, rgba(255,255,255,0) 100%); /* ff3.6+ */
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(13%, rgba(255,0,0,0.75)), color-stop(52%, rgba(255,255,255,0.42)), color-stop(100%, rgba(255,255,255,0))); /* safari4+,chrome */
+		background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.75) 13%, rgba(255,255,255,0.42) 52%, rgba(255,255,255,0) 100%); /* safari5.1+,chrome10+ */
+		background: -o-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.75) 13%, rgba(255,255,255,0.42) 52%, rgba(255,255,255,0) 100%); /* opera 11.10+ */
+		background: -ms-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.75) 13%, rgba(255,255,255,0.42) 52%, rgba(255,255,255,0) 100%); /* ie10+ */
+		background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0.75) 13%, rgba(255,255,255,0.42) 52%, rgba(255,255,255,0) 100%); /* w3c */
+	}
+	
+	.eee{color:#eee;}
+	.ddd{color:#ddd;}
+	
+	.nam {
+		font-size: 16px;
+		color: #c00;
+		font-weight: bold;
+		margin-top: -10px;
+		margin-left: 12px;
+		margin-right: 10px;
+	}
+	audio { 
+		width: 300px; 
+		display: block; 
+		margin: 0 20px;
+	}
+	
+	#flip{
+		cursor:pointer;
+	}
+	#flip{
+		color: #060;
+		padding:5px;
+		background-color:#e5eecc;
+		border:solid 1px #c3c3c3;
+		width: 670px;
+		overflow: hidden;
+	}
+	#flip .txt{
+		font-size:16px;
+	}
+	#flip img{
+		width: 20px;
+		float:right;
+	}
+	
+	#panel{
+		color: #060;
+		padding:15px;
+		display:none;
+		width: 650px;
+		background-color:#e5eecc;
+		border:solid 1px #c3c3c3;
+		margin-bottom: 20px;
+		text-align:justify;
+		overflow: hidden;
+	}
+	#panel .sign{
+		font-size: 10px;		
+  		margin-top: 40px;
+		float:left;
+	}
+	#panel img{
+		float: right;
+	}
+	
+	
+	a:link, a:active, a:visited {
+		color: #097eaf;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #00F;
+	}
+	.thanhcaBG{
+		width: 900px;
+		//background:#ffffff url('img/cd_4.jpg') no-repeat right top;	
+	}
+</style>
+<script>
+$cadoan_img = "cd_4";
+$(document).ready(function(){
+  	$("#flip").click(function(){$("#panel").slideToggle("slow");});
+  	//var randomImages = ['cd_1','cd_2','cd_3','cd_4']; 
+	//var rndNum = Math.floor(Math.random() * randomImages.length); 
+	//$cadoan_img = randomImages[rndNum];
+	//$(".thanhcaBG").css({ background: "url(img/" + $cadoan_img + ".jpg) no-repeat right top" });
+	
+</script>
+
+<div id="flip"><span class="txt">Lời Ngỏ</span> <img src="images/updown.png"/></div>
+<div id="panel">Ca Đoàn Séraphim lớn lên cùng Giáo Xứ Các Thánh Tử Đạo Việt Nam tại vùng Thủ Phủ Richmond, VA.  Họ là những anh chị em tự nguyện đến với nhau, cùng đóng góp thời gian và lời ca tiếng hát ca tụng Chúa.<br><br>Năm 2010, ca đoàn bắt đầu dùng bộ Thánh Vịnh Đáp Ca của Cha Kim Long và anh chị em thay phiên nhau để xướng các Thánh Vịnh Đáp Ca mỗi Chúa Nhật.   Từ đó, một vấn đề khó khăn mới được đặt ra, là làm sao để mỗi anh chị em có thể tập bài mới mỗi tuần mà thời gian tập hát thì eo hẹp;  người có trách nhiệm sẽ phải tự tập hát các câu Thánh Vịnh, trong khi anh chị em ca đoàn có thể nhanh chóng tập câu đáp chung và câu Alleluia mà thôi.  Trong bối cảnh đó, trung tuần tháng 5 năm 2012,  anh chị em ca đoàn không quản ngày đêm để trang tập hát Online này ra đời, như một nổ lực đóng góp vào Phụng Vụ Thánh lễ; không chỉ cho ca đoàn tại Giáo xứ, mà còn cho tất cả những ai có nhu cầu.<br><br>Với niềm hăng say phục vụ, anh Hoàng Tiếp, ca trưởng, đã dày công hoà âm, soạn nhạc (sibelius), thâu ra những bài hát sống động chung và riêng từng phần (studio) để anh chị em ca đoàn có thể nghe và tự tập bất kỳ ở đâu.  Với sự mong mỏi đóng góp của tất cả những ai có khả năng, hoặc có nhu cầu về dòng nhạc hoà âm, xin liên lạc với anh Hoàng Tiếp ở <b>hoang-tiep@hotmail.com</b><br><br>Trang Tập Hát Online này sử dụng những cú trình mới nhất nhằm đáp ứng nhu cầu truy cập từ mọi hệ điều hành; không chỉ với máy vi tính thuần túy, mà còn hoạt động tốt với một trình duyệt web của iPhone, iPad, Android, hoặc smart phone.  Nếu các bạn có khó khăn về việc nghe nhìn ở trang này, xin vui lòng gởi email về <b>seraphim@chungnhan.org</b>, chúng tôi sẵn sàng giúp các bạn trong những điều kiện có thể.
+
+<div class="sign"><i>"Phục Vụ Trong Lòng Mến"</i><br><strong>Séraphim - Hoan Ca</strong><br>Giáo Xứ Các Thánh Tử Đạo Việt Nam - Richmond, VA</div>
+<img src="images/serLogo.png" width="50"/>
+</div>
+<div class="clear:both;display: block;">&nbsp;</div>

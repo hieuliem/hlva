@@ -1,0 +1,35 @@
+{
+	"Chúa Nhật Lễ Lá":[
+		{"type":"CNL","dir":"baihatmoi\/hoiCuaNganThu","name":"Hỡi Cửa Ngàn Thu"}
+	],
+	"Chúa Nhật 5 Mùa Chay":[
+		{"type":"CNL","dir":"baihatmoi\/ChuaLaNoiConNuongTua","name":"Nơi Con Nương Tựa"}
+	],
+	"Chúa Nhật 4 Mùa Chay":[
+		{"type":"CNL","dir":"baihatmoi\/gierusalemHayMungVui","name":"Giêrusalem Hãy Mừng Vui"}
+	],
+	"Lễ Truyền Tin":[
+		{"type":"CNL","dir":"baihatmoi\/xinThuongConChuaOi","name":"Xin Thương Con Chúa Ơi"}
+	],
+	"Chúa Nhật 3 Mùa Chay":[
+		{"type":"CHL","dir":"baihatmoi\/nguonNuocHangSong","name":"Nguồn Nước Hằng Sống"}
+	],
+	"Chúa Nhật 2 Mùa Chay":[
+		{"type":"CNL","dir":"cnl_2MCA","name":"Nguyện Cầu"}
+	],
+	"Chúa Nhật 1 Mùa Chay":[
+		{"type":"CNL","dir":"cnl_1MCA","name":"Thánh Vịnh 90"}
+	],
+	"Thứ Tư Lễ Tro":[
+		{"type":"CNL","dir":"baihatmoi\/ChuaMotLongThuong","name":"Chúa Một Lòng Thương"}
+	],
+	"Chúa Nhật 8 Thường Niên":[
+		{"type":"CNL","dir":"baihatmoi\/ChuaCuuTroToi","name":"Chúa Cứu Trợ Tôi"}
+	],
+	"Chúa Nhật 7 Thường Niên":[
+		{"type":"CNL","dir":"baihatmoi\/phanConDay","name":"Phần Con Đây"}
+	],
+	"Chúa Nhật 3 Mùa Vọng":[
+		{"type":"CNL","dir":"baihatmoi\/cnl\/cn3MV","name":"Phil 4,4-5"}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"path":"baihatmoi",
+	"sub":"",
+	"list":[
+	    {"date":"02\/19\/2023","dir":"hhc","name":"Hiệp Hành Ca","pdf":"hiepHanhCa","tacgia":"Hoàng Tiếp","caudau":"Nào về đây tay trong tay, ta cùng nhau .."},
+	    {"date":"11\/20\/2019","dir":"chungLoiNgoiCa","name":"Chung Lời ngợi Ca","pdf":"chungLoiNgoiCa","tacgia":"Hoàng Tiếp","caudau":"Biết lấy gì mà dâng lên Chúa đây .."},
+		{"date":"09\/06\/2014","dir":"mlss","name":"Một Lòng Sắc Son","pdf":"motLongSacSon","tacgia":"Hoàng Tiếp","caudau":"Từ khi con chưa sinh ra đời .."},
+		{"date":"09\/01\/2014","dir":"vlt","name":"Vâng Lời Thầy","pdf":"vangLoiThay","tacgia":"Hiếu Liêm","caudau":"Vâng lời Thầy, con xin thả lưới."}
+	]
+}

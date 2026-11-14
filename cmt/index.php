@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+     <?php $UniquePageId = 5 ?>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Webpage easily added dynamic comments and replies</title>
+    <meta name="description" 
+          content="Seraphim Comments System, Tập Hát Online" />
+    <meta name="author" content="HLVA"/>
+    
+	<link rel="stylesheet" type="text/css" href="example.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="commentstyle.css" media="screen"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+</HEAD>
+<BODY onload=init()>
+
+    <header ID="Banner">
+            <h1>Demonstration of how it can be made easy to add comments and replies to webpages</h1>
+    </header>
+     
+    <article>    
+    <h2>Demonstration</h2>
+    <p>
+    After writing comment and reply code it has to be made easy to use so this page looks at removing it all from webpages and coming up with
+    a line or two that can be pasted into a web page to use the comment and reply system.
+    </p>
+
+    <?php   include 'displaycomments.php'; 
+			displaycomments($UniquePageId);
+            include 'commentsform.htm';
+            echo '<script src="jgdhandlers.js"     ></script>'
+    ?>
+    </article>
+   
+    <footer id="Details">
+     <div>
+        <p>
+           Footer of your page<br/> 
+        </p>
+     </div>
+     </footer>
+
+</BODY>
+</HTML>

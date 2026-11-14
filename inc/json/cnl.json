@@ -1,0 +1,15 @@
+{
+	"path":"baihatmoi",
+	"sub":"",
+	"Chúa Nhật Lễ Lá":{"dir":"hoiCuaNganThu","name":"Hỡi Cửa Ngàn Thu","title":"CNL"},
+	"Chúa Nhật 5 Mùa Chay":{"dir":"ChuaLaNoiConNuongTua","name":"Nơi Con Nương Tựa","title":"CNL"},
+	"Chúa Nhật 3 Mùa Chay":{"dir":"nguonNuocHangSong","name":"Nguồn Nước Hằng Sống","title":"CHL"},
+	"Chúa Nhật 4 Mùa Chay":{"dir":"gierusalemHayMungVui","name":"Giêrusalem Hãy Mừng Vui","title":"CNL"},
+	"Lễ Truyền Tin":{"dir":"xinThuongConChuaOi","name":"Xin Thương Con Chúa Ơi","title":"CNL"},
+	"Chúa Nhật 2 Mùa Chay":{"dir":"cnl_2MCA","name":"Nguyện Cầu","title":"CNL"},
+	"Chúa Nhật 1 Mùa Chay":{"dir":"cnl_1MCA","name":"Thánh Vịnh 90","title":"CNL"},
+	"Thứ Tư Lễ Tro":{"dir":"ChuaMotLongThuong","name":"Chúa Một Lòng Thương","title":"CNL"},
+	"Chúa Nhật 8 Thường Niên":{"dir":"ChuaCuuTroToi","name":"Chúa Cứu Trợ Tôi","title":"CNL"},
+	"Chúa Nhật 7 Thường Niên":{"dir":"phanConDay","name":"Phần Con Đây","title":"CNL"},
+	"Chúa Nhật 3 Mùa Vọng":{"dir":"cnl\/cn3MV","name":"Phil 4,4-5","title":"CNL"}
+}
