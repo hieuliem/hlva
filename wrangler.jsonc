@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "thanhca-online",
+  "account_id": "fe0dcbd6cad2126ec8b7bde4b63c38e6",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-03-01",
+  "observability": {
+    "enabled": true,
+    "traces": {
+      "enabled": true
+    }
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "THANHCA_R2_URL": "https://pub-3de53d5d95bd4ddba9c86d03da43133d.r2.dev"
+  },
+  "routes": [
+    {
+      "pattern": "thanhca.chungnhan.org",
+      "custom_domain": true
+    }
+  ]
+}

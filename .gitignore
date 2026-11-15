@@ -22,3 +22,9 @@ upload/*.wav
 Thumbs.db
 .vscode/
 .idea/
+
+# Cloudflare Workers / Node
+node_modules/
+.wrangler/
+.dev.vars
+

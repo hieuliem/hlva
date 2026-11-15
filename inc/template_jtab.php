@@ -323,7 +323,7 @@
         <script src="js/jquery-1.11.0.min.js"></script>
     <![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="http://chungnhan.org/lib/players/mediaelement-and-player.min.js"></script>
+	<!--script src="http://chungnhan.org/lib/players/mediaelement-and-player.min.js"></script-->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.lazyloadxt.extra.min.js" type="text/javascript"></script>
 	<script>
