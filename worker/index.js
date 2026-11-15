@@ -113,12 +113,15 @@ function renderHomePage(request) {
   const { todayTs } = getTodayInfo();
   const currLetter = getCurrentYearLetter(todayTs);
   const activeKey = Math.max(0, NAM_ARR.indexOf(currLetter));
+  const activeRange = abcData[currLetter] || abcData.A;
+  const calYear1 = parseInt(activeRange.end.slice(activeRange.end.lastIndexOf("/") + 1), 10) || 2026;
+  const calYear2 = calYear1 + 1;
 
   let tvdcLis = "";
   for (const n of NAM_ARR) {
     tvdcLis += `<li><a href="#${n}" data="main/pvUtils.php?name=${n}">Phụng Vụ Đáp Ca Năm ${n} ${getYearRangeLabel(n)}</a></li> `;
   }
-  tvdcLis += `<li><a href="#3" target="_blank">Lịch Phụng Vụ 2026</a></li>\n\t<li><a href="#4" target="_blank">\n\t${mobile ? " Lịch Phụng Vụ" : ""} 2027\n\t</a></li>`;
+  tvdcLis += `<li><a href="#3" target="_blank">Lịch Phụng Vụ ${calYear1}</a></li>\n\t<li><a href="#4" target="_blank">\n\t${mobile ? " Lịch Phụng Vụ" : ""} ${calYear2}\n\t</a></li>`;
 
   let tvdcDivs = "";
   for (const n of NAM_ARR) {
@@ -150,10 +153,10 @@ function renderHomePage(request) {
 <div>&nbsp;</div>
 <script>
 $(document).on('click', 'a[href="#3"]', function() {
-   window.location.href = "lich/2026";
+   window.location.href = "lich/${calYear1}";
 });
 $(document).on('click', 'a[href="#4"]', function() {
-   window.location.href = "lich/2027";
+   window.location.href = "lich/${calYear2}";
 });
 </script>`;
 
@@ -492,7 +495,7 @@ export default {
       return renderSongMedia(url, r2BaseUrl);
     }
 
-    const lichMatch = path.match(/^\/lich\/(2026|2027)(?:\/|\/index\.php)?$/);
+    const lichMatch = path.match(/^\/lich\/(\d{4})(?:\/|\/index\.php)?$/);
     if (lichMatch) {
       return renderLich(lichMatch[1]);
     }

@@ -7,6 +7,15 @@ $new_order = array("tc","gs","tt","ps","st");
 $tcTab = $pv->getOrderTab($new_order);
 
 $detect = new Mobile_Detect;
+
+// Automatically determine current and next Liturgical Calendar years from active cycle in ABC.json
+$currLetter = $pv->currYear();
+$currRange  = $pv->getYearRange($currLetter); // e.g. "(2025-2026)"
+$calYear1   = 2026;
+if (preg_match('/-(\d{4})\)/', $currRange, $m)) {
+    $calYear1 = intval($m[1]);
+}
+$calYear2 = $calYear1 + 1;
 ?>
 <div id="tvdcTab">
 	<ul>
@@ -14,11 +23,11 @@ $detect = new Mobile_Detect;
 		foreach($pv->getNamPvArr() as $n){
 			echo '<li><a href="#'.$n.'" data="main/pvUtils.php?name='.$n.'">Phụng Vụ Đáp Ca Năm '.$n.' '.$pv->getYearRange($n).'</a></li> ';
 		}
-	?><li><a href="#3" target="_blank">Lịch Phụng Vụ 2026</a></li>
+	?><li><a href="#3" target="_blank">Lịch Phụng Vụ <?php echo $calYear1; ?></a></li>
 	<li><a href="#4" target="_blank">
 	<?php
 	    if($detect->isMobile())	echo " Lịch Phụng Vụ";
-	?> 2027
+	?> <?php echo $calYear2; ?>
 	</a></li>
 	</ul>
 
@@ -45,9 +54,9 @@ $detect = new Mobile_Detect;
 <div>&nbsp;</div>
 <script>
 $(document).on('click', 'a[href="#3"]', function() {
-   window.location.href = "lich/2026";
+   window.location.href = "lich/<?php echo $calYear1; ?>";
 });
 $(document).on('click', 'a[href="#4"]', function() {
-   window.location.href = "lich/2027";
+   window.location.href = "lich/<?php echo $calYear2; ?>";
 });
 </script>
