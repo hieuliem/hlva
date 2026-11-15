@@ -13,5 +13,5 @@
  *   If false, use local ../../taphat_media/ when present and automatically fall back
  *   to Cloudflare R2 when local files are absent (e.g. on a cloud host deployed from GitHub).
  */
-$THANHCA_R2_PUBLIC_URL = getenv('THANHCA_R2_URL') ?: '';
+$THANHCA_R2_PUBLIC_URL = getenv('THANHCA_R2_URL') ?: 'https://pub-3de53d5d95bd4ddba9c86d03da43133d.r2.dev';
 $THANHCA_PREFER_R2     = true;
